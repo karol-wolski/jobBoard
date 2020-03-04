@@ -64,9 +64,19 @@ module.exports = {
             loader: 'file-loader',
             options: {
               outputPath: 'images',
+              esModule: false,
             },
           },
         ],
+      },
+      {
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader',
+          options: {
+            attrs: ['img:src'],
+          },
+        },
       },
     ],
   },
@@ -88,6 +98,6 @@ module.exports = {
   },
 
   devServer: {
-    open: true,
+    open: false,
   },
 };
