@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Raleway', sans-serif;
 }
 
 .wrapper {
@@ -22,7 +23,6 @@ html {
 
 .header {
   display: flex;
-  font-family: 'Raleway', sans-serif;
   color: $white;
   background: $green;
   text-transform: uppercase;
@@ -56,11 +56,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin: 20px 0 0 0;
-
-  // @media (min-width: 1024px) {
-  //   margin: 0;
-  // }
 }
 
 .menu {
@@ -119,6 +114,55 @@ html {
   }
 }
 
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #eeedf3;
+  height: 100vh;
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 900;
+    color: $green;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15rem 0 1rem 0;
+    border-bottom: 1px solid $greyDark;
+    max-width: 800px;
+    @media (min-width: 768px) {
+      font-size: 6rem;
+    }
+    & > span {
+      color: $black;
+    }
+  }
+
+  &__subtitle {
+    width: calc(100% - 30px);
+    font-size: 1.8rem;
+    color: $greyDark;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  & > .btn {
+    width: calc(100% - 30px);
+    height: 5.5rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-top: 5rem;
+    @media (min-width: 500px) {
+      width: 44.5rem;
+    }
+  }
+}
+
 .btn {
   padding: 5px 10px;
   border: none;
@@ -126,6 +170,7 @@ html {
   cursor: pointer;
   color: $white;
   text-decoration: none;
+  text-transform: uppercase;
 
   &__menu {
     position: absolute;
@@ -142,6 +187,11 @@ html {
   }
   [aria-expanded='true'] {
     display: none;
+  }
+
+  &--green {
+    background-color: $green;
+    color: $white;
   }
 }
 
