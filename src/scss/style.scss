@@ -137,6 +137,7 @@ html {
     max-width: 800px;
     @media (min-width: 768px) {
       font-size: 6rem;
+      padding-top: 15rem;
     }
     & > span {
       color: $black;
@@ -160,6 +161,75 @@ html {
     @media (min-width: 500px) {
       width: 44.5rem;
     }
+  }
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $grayLight;
+  padding: 9rem 0;
+  text-align: center;
+
+  &__title {
+    font-size: 4.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $green;
+    margin-bottom: 3rem;
+    span {
+      color: $black;
+    }
+  }
+
+  &__desc {
+    max-width: 70rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 0 15px;
+  }
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 120rem;
+
+  @media (min-width: 1200px) {
+    justify-content: space-between;
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 270px;
+  padding: 0 15px;
+  margin: 5rem 0;
+
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $green;
+    margin-bottom: 3rem;
+  }
+
+  &__desc {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  &__icon {
+    margin-bottom: 4rem;
   }
 }
 
