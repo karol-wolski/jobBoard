@@ -132,9 +132,9 @@ html {
     color: $green;
     text-transform: uppercase;
     text-align: center;
-    padding: 15rem 0 1rem 0;
+    padding: 7rem 1.5rem 1rem;
     border-bottom: 1px solid $greyDark;
-    max-width: 800px;
+    max-width: 83rem;
     @media (min-width: 768px) {
       font-size: 6rem;
       padding-top: 15rem;
@@ -189,7 +189,7 @@ html {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.6;
-    padding: 0 15px;
+    padding: 0 1.5rem;
   }
 }
 
@@ -210,8 +210,8 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 270px;
-  padding: 0 15px;
+  width: 27rem;
+  padding: 0 1.5rem;
   margin: 5rem 0;
 
   &__title {
