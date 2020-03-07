@@ -24,7 +24,7 @@ html {
 .header {
   display: flex;
   color: $white;
-  background: $green;
+  background: $green200;
   text-transform: uppercase;
   height: 7rem;
   position: fixed;
@@ -73,7 +73,7 @@ html {
   top: 70px;
   left: 0;
   right: 0;
-  background: #5bbc2e;
+  background: $green200;
 
   @media (min-width: 1024px) {
     display: flex;
@@ -86,7 +86,7 @@ html {
   &__item {
     &:last-of-type {
       .menu__link {
-        background-color: $greenDark;
+        background-color: $green300;
         padding: 12px 19px;
       }
     }
@@ -109,7 +109,7 @@ html {
     color: $white;
 
     &:hover {
-      color: $greenLight;
+      color: $green100;
     }
   }
 }
@@ -123,17 +123,17 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #eeedf3;
+  background-color: $grey300;
   height: 100vh;
 
   &__title {
     font-size: 4rem;
     font-weight: 900;
-    color: $green;
+    color: $green200;
     text-transform: uppercase;
     text-align: center;
     padding: 7rem 1.5rem 1rem;
-    border-bottom: 1px solid $greyDark;
+    border-bottom: 1px solid $grey400;
     max-width: 83rem;
     @media (min-width: 768px) {
       font-size: 6rem;
@@ -147,7 +147,7 @@ html {
   &__subtitle {
     width: calc(100% - 30px);
     font-size: 1.8rem;
-    color: $greyDark;
+    color: $grey400;
     margin-top: 2rem;
     text-align: center;
   }
@@ -169,7 +169,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: $grayLight;
+  background-color: $gray200;
   padding: 9rem 0;
   text-align: center;
 
@@ -177,7 +177,7 @@ html {
     font-size: 4.8rem;
     font-weight: 900;
     text-transform: uppercase;
-    color: $green;
+    color: $green200;
     margin-bottom: 3rem;
     span {
       color: $black;
@@ -217,7 +217,7 @@ html {
   &__title {
     font-size: 1.4rem;
     font-weight: 600;
-    color: $green;
+    color: $green200;
     margin-bottom: 3rem;
   }
 
@@ -230,6 +230,72 @@ html {
 
   &__icon {
     margin-bottom: 4rem;
+  }
+}
+
+.solutions {
+  display: flex;
+  flex-direction: row;
+  background-color: $white;
+  padding: 7.5rem 0;
+
+  &--bg-gray {
+    background-color: $gray100;
+  }
+
+  &--pdng-50 {
+    padding: 5rem 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media (min-width: 360px) {
+      max-width: 47rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 47rem;
+    }
+
+    &--center {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: $grey500;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    span {
+      color: $green200;
+    }
+  }
+
+  &__desc {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: $grey600;
+  }
+
+  &__image {
+    margin: 2rem 0 0 0;
+    width: fit-content;
+
+    @media (min-width: 640px) {
+      margin: 0 0 0 1.5rem;
+    }
+  }
+
+  @media (max-width: 639px) {
+    .wrapper {
+      flex-direction: column;
+    }
   }
 }
 
@@ -260,7 +326,7 @@ html {
   }
 
   &--green {
-    background-color: $green;
+    background-color: $green200;
     color: $white;
   }
 }
