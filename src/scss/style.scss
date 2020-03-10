@@ -1,5 +1,7 @@
 @import './colors';
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -528,6 +530,55 @@ html {
   }
 }
 
+.stats {
+  background-color: $grey400;
+  padding: 7rem 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+
+  &__container {
+    max-width: 120rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @media (min-width: 480px) {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem 1.5rem;
+  }
+
+  &__counter {
+    font-size: 3rem;
+    font-weight: 800;
+    color: $white;
+
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 1px solid $white;
+      width: 10.5rem;
+      margin: 1rem auto 2rem;
+    }
+  }
+
+  &__name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
 .btn {
   padding: 5px 10px;
   border: none;
@@ -556,7 +607,11 @@ html {
   }
 
   &--contained {
-    padding: 2rem 16.5rem;
+    padding: 2rem 8rem;
+    margin: 0 1.5rem;
+    @media (min-width: 640px) {
+      padding: 2rem 16.5rem;
+    }
   }
 
   &--green {
