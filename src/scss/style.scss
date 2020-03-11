@@ -580,6 +580,85 @@ html {
   }
 }
 
+.work-together {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rem 1.5rem 0;
+  color: $white;
+  background-color: $grey900;
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+  }
+
+  &__desc {
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 90rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 6.5rem;
+  }
+
+  &__container {
+    // display: flex;
+    // justify-content: space-evenly;
+    // flex-wrap: wrap;
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: 520px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(9, 1fr);
+    }
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    margin-bottom: 5rem;
+    grid-column: span 3;
+    row-gap: 1.5rem;
+
+    @media (min-width: 1200px) {
+      &:nth-child(-1n + 4) {
+        grid-column: span 3;
+      }
+      &:nth-child(5) {
+        grid-column: 2 / span 3;
+      }
+    }
+  }
+}
+
+.contact-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $grey800;
+  color: $white;
+  padding: 5rem 1.5rem;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 4.5rem;
+  }
+}
+
 .btn {
   padding: 5px 10px;
   border: none;
@@ -612,6 +691,19 @@ html {
     margin: 0 1.5rem;
     @media (min-width: 640px) {
       padding: 2rem 16.5rem;
+    }
+  }
+
+  &--outlined {
+    border: 2px solid $white;
+    margin: 0 1.5rem;
+    @media (min-width: 640px) {
+      padding: 2rem 5rem;
+    }
+
+    &:hover {
+      background-color: $white;
+      color: $black;
     }
   }
 
