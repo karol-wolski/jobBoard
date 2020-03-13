@@ -37,8 +37,16 @@ const mobileNavigation = () => {
   });
 };
 
-const init = () => {
-  mobileNavigation();
+const removeTwitterStyle = () => {
+  const twitter = document.querySelector('.twitter-tweet-rendered');
+  twitter.removeAttribute('style');
 };
 
-init();
+const init = () => {
+  mobileNavigation();
+  removeTwitterStyle();
+};
+
+window.onload = () => {
+  init();
+};

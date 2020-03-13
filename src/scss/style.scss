@@ -723,50 +723,26 @@ html {
   }
 
   &__section {
-    &--2 {
-      width: 100%;
+    width: 100%;
 
-      @media (min-width: 640px) {
-        width: calc(50% - 3rem);
-      }
+    @media (min-width: 640px) {
+      width: calc(50% - 3rem);
+    }
 
-      @media (min-width: 1024px) {
-        width: calc(33.333% - 3rem);
-      }
+    @media (min-width: 1024px) {
+      width: calc(33.333% - 3rem);
+    }
 
-      @media (min-width: 1200px) {
+    @media (min-width: 1200px) {
+      &--2 {
         width: 17rem;
       }
-    }
 
-    &--3 {
-      width: 100%;
-
-      @media (min-width: 640px) {
-        width: calc(50% - 3rem);
-      }
-
-      @media (min-width: 1024px) {
-        width: calc(33.333% - 3rem);
-      }
-
-      @media (min-width: 1200px) {
+      &--3 {
         width: 27rem;
       }
-    }
 
-    &--4 {
-      width: 100%;
-
-      @media (min-width: 640px) {
-        width: calc(50% - 3rem);
-      }
-
-      @media (min-width: 1024px) {
-        width: calc(33.333% - 3rem);
-      }
-
-      @media (min-width: 1200px) {
+      &--4 {
         width: 37rem;
       }
     }
@@ -895,4 +871,5 @@ html {
 
 .twitter {
   margin-bottom: 4rem;
+  max-width: 30rem;
 }
